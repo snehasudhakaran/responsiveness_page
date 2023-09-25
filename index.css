@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:broder-box;
+    color: rgb(9, 2, 46);
+}
+.news{
+    width:100%;
+    background-color: rgba(8, 8, 230, 0.2);
+    display:block;
+    box-shadow: 0px 2px 6px rgb(0,0,0,0.2), 0px 6px 12px rgb(0,0,0,0.19);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.new{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    gap:50px !important;
+    padding-left: 40px;
+    padding-right: 45px;
+}
+.new h1{
+     margin-bottom: 6px;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    margin-top: 6px;
+    list-style-type: none;
+    font-size: 15px;
+}
+.new button{
+    padding:5px 20px;
+    color: aliceblue;
+    background-color: rgb(9, 2, 46);
+    border-radius:2px;
+}
+.new1{
+    display:grid;
+    grid-template-columns: 50% 36%;
+    justify-content: center ;
+    margin-top: 42px;
+}
+.new2 h1{
+    font-size: 40px;
+    margin-bottom:25px;
+    margin-top: 80px;
+}
+.new2 p{
+    font-size: 13px;
+    margin-bottom:20px;
+    font-weight: 600;
+}
+.new2 button{
+    padding:12px 20px 10px;
+    background-color:  rgb(9, 2, 46);
+    color:aliceblue;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 10px;
+}
+span{
+    display: none;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:400px){
+    .new1{
+        display:grid;
+        grid-template-columns: 100% !important;
+        justify-content: space-around;
+        margin-top: -50px;
+    }
+    .new2{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    ul{
+        display: none;
+        gap: 40px;
+        margin-top: 6px;
+        list-style-type: none;
+        font-size: 15px;
+    }
+    .new button{
+        display: none;
+    }
+    img{
+        width:300px;
+        height:300px;
+        margin-top: 40px;
+    }
+    .new3{
+        text-align: center;
+    }
+    .new h1{
+        margin-left: -6px;
+   }
+   span{
+    display: block;
+    font-size: 40px;
+    margin-top: -10px;
+    margin-right: -15px;
+   }
+   .menu{
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    width:0;
+    background-color: white;
+    display:none;
+    transition: width 0.3s;
+   }
+   span:hover .menu{
+    display: block;
+    width:50%;
+   }
+   .menu ul{
+    display: block;
+    width:50%;
+    margin-left: 20px;
+    margin-top: 20px;
+   }
+    .menu h1{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .menu ul li{
+        margin-bottom: 15px;
+    }
+    .group{
+        display:flex;
+        justify-content: space-around;
+    }
+    .s {
+        color: black;
+        display: block;
+        margin-top: 20px;
+    }
+}
